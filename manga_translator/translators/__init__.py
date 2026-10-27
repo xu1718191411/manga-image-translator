@@ -27,6 +27,7 @@ from .gemini import GeminiTranslator
 from .gemini_2stage import Gemini2StageTranslator
 from .custom_openai import CustomOpenAiTranslator
 from .atlascloud import AtlasCloudTranslator
+from .sarashina import SarashinaTranslator
 from ..config import Translator, TranslatorConfig, TranslatorChain
 from ..utils import Context
 
@@ -68,6 +69,7 @@ TRANSLATORS = {
     Translator.none: NoneTranslator,
     Translator.original: OriginalTranslator,
     Translator.sakura: SakuraTranslator,
+    Translator.sarashina: SarashinaTranslator,
     **GPT_TRANSLATORS,
     **OFFLINE_TRANSLATORS,
 }
